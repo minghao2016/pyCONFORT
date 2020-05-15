@@ -33,6 +33,7 @@ install:
   - pip install pytest-cov codecov
   - pip install ninja
   - pip install ase
+  - conda install pytorch torchvision cpuonly -c pytorch
 
 before_script:
   - export RDBASE=$CONDA_PREFIX/Library/share/RDKit
