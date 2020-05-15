@@ -23,7 +23,7 @@ before_install:
 
 install:
   - python setup.py install
-  - python ./DBGEN/xtb_lib/xtb/setup.py install
+  - python /DBGEN/xtb_lib/xtb/setup.py install
   - conda install -c openbabel openbabel
   - pip install PyYAML
   - conda install pandas
