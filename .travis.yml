@@ -33,8 +33,8 @@ install:
   - pip install pytest-cov codecov
   - pip install ninja
   - pip install ase
-  - conda install pytorch torchvision cpuonly -c pytorch
-
+  - pip install torch==1.5.0+cpu torchvision==0.6.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
+  - pip install torchani
 before_script:
   - export RDBASE=$CONDA_PREFIX/Library/share/RDKit
   - echo $RDBASE
