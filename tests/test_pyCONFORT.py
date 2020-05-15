@@ -7,14 +7,6 @@ import pytest
 import pandas as pd
 import subprocess
 import DBGEN
-# xTB and ANI1 imports
-import ase
-import ase.optimize
-import torch
-os.environ['KMP_DUPLICATE_LIB_OK']='True'
-device = torch.device('cpu')
-from ase.units import Hartree
-from xtb import GFN2
 
 # saves the working directory
 path = os.getcwd()
